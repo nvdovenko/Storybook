@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import DropdownMenu from './DropdownMenu';
+import DropdownMenu from '../static/components/dropdown-menu/DropdownMenu';
 
 export default {
   title: 'Components/Dropdown menu',
@@ -26,12 +26,18 @@ Default.args = {
 
 export const WithCustomLabel = Template.bind({});
 WithCustomLabel.args = {
-  label: 'Select your favorite fruit',
+  label: 'Select city you want to visit',
   options: [
-    { value: 'apple', text: 'Apple' },
-    { value: 'banana', text: 'Banana' },
-    { value: 'orange', text: 'Orange' },
+    { value: 'london', text: 'London' },
+    { value: 'paris', text: 'Paris' },
+    { value: 'new_york', text: 'New York' },
+    { value: 'tokyo', text: 'Tokyo' },
+    { value: 'berlin', text: 'Berlin' },
+    { value: 'sydney', text: 'Sydney' },
+    { value: 'rome', text: 'Rome' },
+    { value: 'madrid', text: 'Madrid' },
+    { value: 'amsterdam', text: 'Amsterdam' },
   ],
-  value: 'banana',
+  value: 'london',
   onChange: (option) => console.log(option),
 };
