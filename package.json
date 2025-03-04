@@ -24,6 +24,7 @@
     "storybook": "^8.5.3"
   },
   "dependencies": {
+    "recharts": "^2.15.1",
     "vite": "^6.1.0"
   }
 }
