@@ -8,6 +8,9 @@ The link will be available later.
 This project showcases UI components with interactive documentation in Storybook:
 - <b>Bar Chart </b> – data visualization using  ```recharts  ```
 - <b>Dropdown Menu </b> – customizable dropdown component
+- <b>Pie chart </b> –  custom pie chart component
+- <b>Radial gauge </b> – custom radial gauge component to display numerical values in a circular format
+- --
 - <b>Icon Gallery </b> – search and copy-to-clipboard functionality for icons
 - <b>Color Gallery </b> – displays project colors with copy-to-clipboard support
 - <b>Typography </b> – showcases text styles used in the project
