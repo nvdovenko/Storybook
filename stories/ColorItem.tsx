@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles/colorItem.css';
 
+// eslint-disable-next-line react/prop-types
 const Tooltip = ({ text, position }) => <div className={`tooltip tooltip-${position}`}>{text}</div>;
 
 interface ColorItemProps {
