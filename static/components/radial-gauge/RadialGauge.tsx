@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
-// Function to calculate start (lighter) color 
+// Function to calculate start (lighter) color
 const lightenColor = (color: string, percent: number): string => {
   let r: number, g: number, b: number;
   const rgb = color.match(/^rgba?\((\d+), (\d+), (\d+)(?:, (\d+\.?\d*))?\)$/);
@@ -26,7 +26,7 @@ interface RadialGaugeProps {
   text?: string;
   backgroundColorWidth?: number;
   lineWidth?: number;
-  gaugeColor?: string; 
+  gaugeColor?: string;
   canvasSize?: number;
 }
 
@@ -42,7 +42,7 @@ const RadialGauge: React.FC<RadialGaugeProps> = ({
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   // Ensure canvasSize is at least 50 if it's too small or zero
-  const validCanvasSize = Math.max(canvasSize,15); 
+  const validCanvasSize = Math.max(canvasSize, 15);
 
   // Update the gauge when props change
   useEffect(() => {
@@ -56,7 +56,9 @@ const RadialGauge: React.FC<RadialGaugeProps> = ({
       if (ctx) {
         const centerX = canvas.width / 2;
         const centerY = canvas.height / 2;
-        const radius = Math.min(centerX, centerY) - Math.min(backgroundColorWidth / 2, Math.min(centerX, centerY) / 2);
+        const radius =
+          Math.min(centerX, centerY) -
+          Math.min(backgroundColorWidth / 2, Math.min(centerX, centerY) / 2);
 
         const startAngle = Math.PI * 1.5;
         const lightColor = lightenColor(gaugeColor, 0.5);

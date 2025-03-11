@@ -1,90 +1,90 @@
 label {
-    display: block;
-    color: #000;
-    margin-bottom: 10px;
-    font-family: Nunito Sans;
-    font-size: 16px;
-    font-weight: bolder;
-  }
-  
-  .div-container {
-    display: inline-block;
-    width: 100%;
-    max-width: 500px;
-    background-color: #fff;
-    border-radius: 1px;
-    appearance: none;
-    cursor: pointer;
-    position: relative;
-    outline: none;
-    font-family: Nunito Sans;
-    font-size: 14px;
-    border: 1px solid #ccc;
-  }
-  
-  .div-container::after {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 2px; 
-    pointer-events: none;
-    content: "˅";
-    color: #626161;
-    transition: color 0.2s ease;
-    font-size: 14px;
-  }
-  
-  .selected {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    background-color: #fff;
-    border-radius: 1px;
-    cursor: pointer;
-    color: #000;
-    margin-right: 20px;
-    font-size: 14px;
-    font-family: Nunito Sans;
-  }
-  
-  .options {
-    display: none;
-    position: absolute;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 1px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    max-height: 200px;
-    overflow-y: auto;
-    margin-top: 5px;
-    transition: opacity 0.3s ease;
-  }
-  
-  .options.open {
-    display: block;
-  }
-  
-  .option {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    font-size: 14px;
-    font-family: Nunito Sans;
-    background-color: #fff;
-    color: #000;
-    border-bottom: 1px solid #eee;
-    cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
-    border-radius: 0;
-  }
+  display: block;
+  color: #000;
+  margin-bottom: 10px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: bolder;
+}
 
-  .option.active {
-    background-color: #9AD0DA;
-  }
+.div-container {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 1px;
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
 
-  .option:hover {
-    background-color: #9AD0DA;
-  }
-  
-  
+.div-container::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2px;
+  pointer-events: none;
+  content: '˅';
+  color: #626161;
+  transition: color 0.2s ease;
+  font-size: 14px;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 1px;
+  cursor: pointer;
+  color: #000;
+  margin-right: 20px;
+  font-size: 14px;
+  font-family: Nunito Sans;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.options.open {
+  display: block;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 14px;
+  font-family: Nunito Sans;
+  background-color: #fff;
+  color: #000;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  border-radius: 0;
+}
+
+.option.active {
+  background-color: #9ad0da;
+}
+
+.option:hover {
+  background-color: #9ad0da;
+}

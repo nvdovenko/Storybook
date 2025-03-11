@@ -1,23 +1,24 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 interface PieChartProps {
-  data: number[]; 
-  labels?: string[]; 
-  colors: string[]; 
+  data: number[];
+  labels?: string[];
+  colors: string[];
   showPointerLines?: boolean;
   maxWidth?: number;
   showPercentages?: boolean;
   gapSize?: number; // Gap size in degrees between slices
 }
 
-const PieChart: React.FC<PieChartProps> = ({ 
-  data, 
-  labels = [], 
-  colors, 
-  showPointerLines = false, 
-  maxWidth = 100, 
+const PieChart: React.FC<PieChartProps> = ({
+  data,
+  labels = [],
+  colors,
+  showPointerLines = false,
+  maxWidth = 100,
   showPercentages = false,
-  gapSize = 0}) => {
+  gapSize = 0,
+}) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -34,7 +35,7 @@ const PieChart: React.FC<PieChartProps> = ({
 
         data.forEach((value, index) => {
           const sliceAngle = (value / total) * 2 * Math.PI - gapRad; // Calculate the angle for the slice
-          
+
           ctx.beginPath();
           ctx.moveTo(200, 200); // Move to the center of the circle
           ctx.arc(200, 200, 100, startAngle, startAngle + sliceAngle); // Draw the pie slice
@@ -78,9 +79,9 @@ const PieChart: React.FC<PieChartProps> = ({
             if (showPointerLines) {
               const midX = 200 + Math.cos(textAngle) * 100; // Connection point
               const midY = 200 + Math.sin(textAngle) * 100;
-  
-              const lineLengthFactor = 0.8; // make line 20% shorter 
-  
+
+              const lineLengthFactor = 0.8; // make line 20% shorter
+
               // Calculate the direction vector from the point (midX, midY) to the point (textX, textY)
               const dx = textX - midX;
               const dy = textY - midY;
@@ -88,12 +89,12 @@ const PieChart: React.FC<PieChartProps> = ({
               // Calculate the new endpoint by shifting it by a certain percentage
               const newTextX = midX + dx * lineLengthFactor;
               const newTextY = midY + dy * lineLengthFactor;
-  
+
               ctx.beginPath();
               ctx.moveTo(midX, midY);
-              ctx.lineTo(newTextX, newTextY); 
+              ctx.lineTo(newTextX, newTextY);
               ctx.strokeStyle = '#000';
-              ctx.lineWidth = 0.5;  
+              ctx.lineWidth = 0.5;
               ctx.stroke();
             }
 
@@ -101,7 +102,7 @@ const PieChart: React.FC<PieChartProps> = ({
             const lineHeight = 16; // Line spacing
             const words = label.split(' '); // Split label into words
             let line = '';
-            let lines: string[] = [];
+            const lines: string[] = [];
 
             words.forEach((word) => {
               const testLine = line ? `${line} ${word}` : word;
@@ -118,18 +119,21 @@ const PieChart: React.FC<PieChartProps> = ({
 
             // Draw each line separately
             lines.forEach((line, i) => {
-              ctx.fillText(line, textX, textY + i * lineHeight - (lines.length - 1) * (lineHeight / 2));
+              ctx.fillText(
+                line,
+                textX,
+                textY + i * lineHeight - (lines.length - 1) * (lineHeight / 2),
+              );
             });
           }
 
-          startAngle += sliceAngle+ gapRad; // Update start angle for the next slice
+          startAngle += sliceAngle + gapRad; // Update start angle for the next slice
         });
       }
     }
   }, [data, labels, colors, showPointerLines, gapSize]);
 
-
-return <canvas ref={canvasRef} width={400} height={400} />; // Render the canvas element
+  return <canvas ref={canvasRef} width={400} height={400} />; // Render the canvas element
 };
 
 export default PieChart;

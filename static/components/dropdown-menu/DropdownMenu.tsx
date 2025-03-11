@@ -7,11 +7,11 @@ interface Options {
 }
 
 interface DropdownMenuProps {
-    label: string;
-    options: { value: string; text: string }[];
-    value: string;
-    onChange: (option: { value: string; text: string }) => void;
-  }
+  label: string;
+  options: { value: string; text: string }[];
+  value: string;
+  onChange: (option: { value: string; text: string }) => void;
+}
 
 const DropdownMenu: React.FC<DropdownMenuProps> = ({ label, options, value, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ label, options, value, onCh
   const selectedDivRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const selected = options.find(option => option.value === value);
+    const selected = options.find((option) => option.value === value);
     if (selected) {
       setSelectedOption(selected);
     }
@@ -28,7 +28,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ label, options, value, onCh
 
   const toggleMenu = (e: React.MouseEvent) => {
     e.stopPropagation();
-    setIsOpen(prev => !prev);
+    setIsOpen((prev) => !prev);
   };
 
   const closeMenu = () => {
@@ -63,7 +63,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ label, options, value, onCh
           {selectedOption ? selectedOption.text : 'Choose an option'}
         </div>
         <div className={`options ${isOpen ? 'open' : ''}`} ref={optionsRef}>
-          {options.map(option => (
+          {options.map((option) => (
             <div
               key={option.value}
               className="option"
