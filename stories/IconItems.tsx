@@ -3,6 +3,7 @@ import { IconGallery, IconItem } from '@storybook/blocks';
 import icons from '../utils/iconImport.ts';
 import './styles/iconItems.css';
 
+// eslint-disable-next-line react/prop-types
 const Tooltip = ({ text }) => <div className="tooltip">{text}</div>;
 
 const IconItems = () => {
