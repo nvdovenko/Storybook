@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import DropdownMenu from '../static/components/dropdown-menu/DropdownMenu';
 
 export default {
-  title: 'Components/Dropdown menu',
+  title: 'Components/Simple/Dropdown menu',
   component: DropdownMenu,
   tags: ['autodocs'],
   argTypes: {

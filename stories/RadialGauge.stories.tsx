@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import RadialGauge from '../static/components/radial-gauge/RadialGauge';
 
 export default {
-  title: 'Components/Radial gauge',
+  title: 'Components/Data visualisation/Radial gauge',
   component: RadialGauge,
   tags: ['autodocs'],
   argTypes: {

@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import PieChart from '../static/components/pie-chart/PieChart';
 
 export default {
-  title: 'Components/Pie chart',
+  title: 'Components/Data visualisation/Pie chart',
   component: PieChart,
   tags: ['autodocs'],
   argTypes: {

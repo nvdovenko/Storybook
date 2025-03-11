@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import BarChartComponent from '../static/components/bar-chart/BarChart';
 
 export default {
-    title: 'Components/Bar chart',
+    title: 'Components/Data visualisation/Bar chart',
     component: BarChartComponent,
     tags: ['autodocs'],
     argTypes: {
