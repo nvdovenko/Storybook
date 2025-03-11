@@ -5,6 +5,7 @@ import PieChart from '../static/components/pie-chart/PieChart';
 export default {
   title: 'Components/Pie chart',
   component: PieChart,
+  tags: ['autodocs'],
   argTypes: {
     showPointerLines: { control: 'boolean' },
     showPercentages: { control: 'boolean' },

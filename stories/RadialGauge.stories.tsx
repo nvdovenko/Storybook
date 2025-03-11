@@ -5,6 +5,7 @@ import RadialGauge from '../static/components/radial-gauge/RadialGauge';
 export default {
   title: 'Components/Radial gauge',
   component: RadialGauge,
+  tags: ['autodocs'],
   argTypes: {
     value: { control: 'number' },
     maxValue: { control: 'number' },

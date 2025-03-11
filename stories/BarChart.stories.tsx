@@ -5,6 +5,7 @@ import BarChartComponent from '../static/components/bar-chart/BarChart';
 export default {
     title: 'Components/Bar chart',
     component: BarChartComponent,
+    tags: ['autodocs'],
     argTypes: {
         color: { control: 'color' },
         height: { control: 'number' },

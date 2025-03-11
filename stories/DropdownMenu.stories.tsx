@@ -5,6 +5,7 @@ import DropdownMenu from '../static/components/dropdown-menu/DropdownMenu';
 export default {
   title: 'Components/Dropdown menu',
   component: DropdownMenu,
+  tags: ['autodocs'],
   argTypes: {
     onChange: { action: 'changed' },
   },
