@@ -15,7 +15,7 @@ const PieChart: React.FC<PieChartProps> = ({
   labels = [],
   colors,
   showPointerLines = false,
-  maxWidth = 100,
+  maxWidth = 80,
   showPercentages = false,
   gapSize = 0,
 }) => {
