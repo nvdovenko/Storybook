@@ -26,14 +26,26 @@ export const Button = ({
 };
 
 Button.propTypes = {
-  /** Is this the principal call to action on the page? */
+  /**
+   * Defines whether the button is the primary call to action (e.g., main button on the page).
+   * If `true`, the button will have a primary style.
+   */
   primary: PropTypes.bool,
-  /** What background color to use */
+  /**
+   * Specifies the background color of the button. If not provided, the default button style will be used.
+   */
   backgroundColor: PropTypes.string,
-  /** How large should the button be? */
+  /**
+   * Specifies the size of the button.
+   * Accepted values are: 'small', 'medium', and 'large'.
+   */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /** Button contents */
+  /**
+   * The text label displayed on the button.
+   */
   label: PropTypes.string.isRequired,
-  /** Optional click handler */
+  /**
+   * Optional click handler function that will be triggered when the button is clicked.
+   */
   onClick: PropTypes.func,
 };

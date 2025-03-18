@@ -6,11 +6,17 @@ export default {
   title: "Components/Simple/Checkbox",
   component: Checkbox,
   tags: ["autodocs"],
-  argTypes: {
-    onChange: { action: "changed" },
+   argTypes: {
+    onChange: {
+      action: "changed",
+    },
     size: {
       options: ['small', 'medium', 'large'],
       control: { type: 'select' },
+      description: "The size of the checkbox. Choose from 'small', 'medium', or 'large'."
+    },
+    options: {
+      description: "An array of objects representing the options for the checkboxes. Each object must contain a 'value' (the label of the checkbox) and a 'checked' (boolean indicating whether the checkbox is selected).",
     },
   },
 } as Meta<typeof Checkbox>;

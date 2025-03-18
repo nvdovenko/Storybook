@@ -7,15 +7,36 @@ export default {
   component: RadialGauge,
   tags: ['autodocs'],
   argTypes: {
-    value: { control: 'number' },
-    maxValue: { control: 'number' },
-    text: { control: 'text' },
-    backgroundColorWidth: { control: 'number' },
-    lineWidth: { control: 'number' },
-    gaugeColor: { control: 'color' },
-    canvasSize: { control: 'number'},
+    value: {
+      control: 'number',
+      description: 'The current value of the gauge. This is the percentage to be displayed on the radial gauge (0 to maxValue).'
+    },
+    maxValue: {
+      control: 'number',
+      description: 'The maximum value of the gauge. The gauge will fill up as the `value` approaches this number.'
+    },
+    text: {
+      control: 'text',
+      description: 'The text to be displayed in the center of the gauge. Often used for the value or a label.'
+    },
+    backgroundColorWidth: {
+      control: 'number',
+      description: 'The width of the background circle that forms the gauge, in pixels.'
+    },
+    lineWidth: {
+      control: 'number',
+      description: 'The width of the gauge line, in pixels. This determines the thickness of the radial arc.'
+    },
+    gaugeColor: {
+      control: 'color',
+      description: 'The color of the gauge line, representing the current value. Any valid CSS color value can be used.'
+    },
+    canvasSize: {
+      control: 'number',
+      description: 'The size of the canvas in pixels. This defines the overall size of the radial gauge.'
+    },
   },
-}as Meta<typeof RadialGauge>; 
+} as Meta<typeof RadialGauge>;
 
 const Template: StoryFn<typeof RadialGauge> = (args) => <RadialGauge {...args} />;
 

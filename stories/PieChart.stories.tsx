@@ -7,10 +7,31 @@ export default {
   component: PieChart,
   tags: ['autodocs'],
   argTypes: {
-    showPointerLines: { control: 'boolean' },
-    showPercentages: { control: 'boolean' },
-    gapSize: { control: 'number' },
-    maxWidth: { control: 'number' },
+    showPointerLines: {
+      control: 'boolean',
+      description: 'Controls whether pointer lines are displayed to indicate the segments of the pie chart.'
+    },
+    showPercentages: {
+      control: 'boolean',
+      description: 'Controls whether the percentage values are displayed on the pie chart segments.'
+    },
+    gapSize: {
+      control: 'number',
+      description: 'Defines the gap size between the pie chart segments. A value of 0 means no gap, while higher values create larger gaps.'
+    },
+    maxWidth: {
+      control: 'number',
+      description: 'Sets the maximum width of the labels. If the label text is longer than this value, it will pass to the next line.'
+    },
+    data: {
+      description: 'An array of numerical values representing the data for the pie chart segments. Each value corresponds to the size of a segment.'
+    },
+    labels: {
+      description: 'An array of labels for the pie chart segments. Each label corresponds to the data in the same position in the `data` array.'
+    },
+    colors: {
+      description: 'An array of colors for the pie chart segments. Each color corresponds to the segment in the same position as the `data` array.'
+    },
   },
 } as Meta<typeof PieChart>;
 

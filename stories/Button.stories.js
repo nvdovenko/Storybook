@@ -24,12 +24,14 @@ export const Primary = {
   args: {
     primary: true,
     label: 'Button',
+    size: 'medium',
   },
 };
 
 export const Secondary = {
   args: {
     label: 'Button',
+    size: 'medium',
   },
 };
 
@@ -37,6 +39,7 @@ export const Large = {
   args: {
     size: 'large',
     label: 'Button',
+    
   },
 };
 

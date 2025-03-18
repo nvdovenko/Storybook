@@ -7,12 +7,25 @@ export default {
     component: BarChartComponent,
     tags: ['autodocs'],
     argTypes: {
-        color: { control: 'color' },
-        height: { control: 'number' },
-        width: { control: 'number' },
-        onChange: { action: 'changed' },
+        color: {
+            control: 'color',
+            description: 'The color of the bars in the chart. Use any valid CSS color value.'
+        },
+        height: {
+            control: 'number',
+            description: 'The height of the chart in pixels.'
+        },
+        width: {
+            control: 'number',
+            description: 'The width of the bars in the chart, in pixels.'
+        },
+        onChange: {
+            action: 'changed',
+            description: 'Callback function triggered when the chart data changes.'
+        },
+        
     },
-  } as Meta<typeof BarChartComponent>;
+} as Meta<typeof BarChartComponent>;
   
 const Template: StoryFn<typeof BarChartComponent> = (args) => <BarChartComponent {...args} />;
 

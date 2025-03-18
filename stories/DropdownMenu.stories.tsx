@@ -8,6 +8,14 @@ export default {
   tags: ['autodocs'],
   argTypes: {
     onChange: { action: 'changed' },
+    label: { description: 'The label that will be displayed above the dropdown menu.' },
+    options: {
+      description: 'An array of objects representing the options in the dropdown menu. Each object should have a `value` (the option identifier) and `text` (the label shown in the dropdown).'
+    },
+     value: {
+      description: 'The currently selected value in the dropdown. It should match the `value` of one of the options.',
+      control: 'text'
+    },
   },
 } as Meta<typeof DropdownMenu>;
 
