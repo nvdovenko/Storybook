@@ -8,25 +8,36 @@ The link will be available later.
 
 ## Description
 
-This project showcases UI components with interactive documentation in Storybook:
+Hi! Welcome to my mini Storybook with React components and other features that I developed during my **TypeScript + design systems** study. Hope it highlights my progress and knowledge! 🙂
 
-- <b>Bar Chart </b> – data visualization using `recharts  `
-- <b>Dropdown Menu </b> – customizable dropdown component
+This Storybook includes several UI components, organized as follows:
+
+### Classic UI Components
+
+- <b>Button</b>
+- <b>Checkbox</b>
+- <b>Dropdown Menu</b>
+- <b>Input Field</b>
+- <b>Toggle Button</b>
+
+### Data Visualization Components
+
+- <b>Bar Chart </b> – visualizes data using `recharts`
 - <b>Pie chart </b> – custom pie chart component
-- <b>Radial gauge </b> – custom radial gauge component to display numerical values in a circular format
+- <b>Radial gauge </b> – displays numerical values in a circular format
 
----
+### Other Features
 
+- <b>Color Gallery </b> – displays project colors with a copy name function
 - <b>Icon Gallery </b> – search and copy-to-clipboard functionality for icons
-- <b>Color Gallery </b> – displays project colors with copy-to-clipboard support
 - <b>Typography </b> – showcases text styles used in the project
 
 ### Tech Stack
 
-- React – for building components
-- TypeScript – for type safety
-- Storybook – for component documentation and testing
-- Vite – for fast and efficient bundling
+- React: for building components
+- TypeScript: for type safety
+- Storybook: for component documentation and testing
+- Vite: for fast and efficient bundling
 
 ### Installation
 
