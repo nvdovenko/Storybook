@@ -1,0 +1,41 @@
+.toggle-container {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.toggle-button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  font-weight: 400;
+  font-family: 'Nunito Sans', sans-serif;
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.toggle-button--on {
+  background-color: #9ad0da;
+}
+
+.toggle-button--off {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  background-color: transparent;
+  cursor: default;
+}
+
+.toggle-button--small {
+  padding: 10px 16px;
+  font-size: 12px;
+}
+
+.toggle-button--medium {
+  padding: 11px 20px;
+  font-size: 14px;
+}
+
+.toggle-button--large {
+  padding: 12px 24px;
+  font-size: 16px;
+}
