@@ -32,6 +32,9 @@ export default {
     colors: {
       description: 'An array of colors for the pie chart segments. Each color corresponds to the segment in the same position as the `data` array.'
     },
+    border: {
+      description: 'Controls whether a border is drawn around the pie chart segments.',
+      control: 'boolean',},
   },
 } as Meta<typeof PieChart>;
 
@@ -67,6 +70,15 @@ WithPercentages.args = {
   labels: labelsArray,
   colors: colorsArray,
   showPercentages: true,
+};
+
+export const WithBorder = Template.bind({});
+WithBorder.args = {
+  data: dataArray,
+  labels: labelsArray,
+  colors: colorsArray,
+  showPercentages: true,
+  border: true,
 };
 
 export const WithGap = Template.bind({});

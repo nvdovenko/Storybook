@@ -8,6 +8,7 @@ interface PieChartProps {
   maxWidth?: number;
   showPercentages?: boolean;
   gapSize?: number; // Gap size in degrees between slices
+  border?: boolean;
 }
 
 const PieChart: React.FC<PieChartProps> = ({
@@ -18,6 +19,7 @@ const PieChart: React.FC<PieChartProps> = ({
   maxWidth = 80,
   showPercentages = false,
   gapSize = 0,
+  border = false,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -41,6 +43,12 @@ const PieChart: React.FC<PieChartProps> = ({
           ctx.arc(200, 200, 100, startAngle, startAngle + sliceAngle); // Draw the pie slice
           ctx.fillStyle = colors[index % colors.length]; // Assign color to the slice
           ctx.fill(); // Fill the slice with color
+
+          if (border) {
+            ctx.strokeStyle = '#000';
+            ctx.lineWidth = 0.5;
+            ctx.stroke(); // Outline the slice
+          }
 
           const textAngle = startAngle + sliceAngle / 2;
 
