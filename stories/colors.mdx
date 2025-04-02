@@ -1,4 +1,4 @@
-import { Meta, ColorPalette } from '@storybook/blocks';
+import { Meta } from '@storybook/blocks';
 import ColorItem from './ColorItem';
 
 <Meta title="Tokens/Colors" />
@@ -6,22 +6,80 @@ import ColorItem from './ColorItem';
 # Colors
 
 <ColorItem
-    title="Background Color"
-    subtitle="--backgroundColor"
-    colors={{
-        primary: "#E0AC9D",
-        secondary: "#996888",
-        warning: "#CD5D67",
+  title="Background Color"
+  subtitle="--backgroundColor"
+  colors={{
+    primary: '#9ad0da',
+    secondary: '#c3d8e0',
+    light: '#f0f5f6',
+    additional: '#b6d8b0',
+    neutral: '#e1e6ea',
+    subtle: '#d8c8e0',
+    highlight: '#f3e5a4',
+  }}
+/>
 
-    }}
+<ColorItem
+  title="Text Color"
+  subtitle="--textColor"
+  colors={{
+    primary: '#4a5a63',
+    secondary: '#7a8b8d',
+    muted: '#b0b8bb',
+    light: '#f4f4f4',
+    subtle: '#787c7f',
+  }}
+/>
 
+<ColorItem
+  title="Accent Color"
+  subtitle="--accentColor"
+  colors={{
+    primary: '#9ad0da',
+    secondary: '#afd8b5',
+    attention: '#f1a7a1',
+    additional: '#d8b6e2',
+  }}
 />
 
 <ColorItem
   title="Border Color"
   subtitle="--borderColor"
   colors={{
-    primary: '#A37774',
-    secondary: '#C99DA3',
+    primary: '#9ad0da',
+    secondary: '#c1d5d9',
+    neutral: '#e0e6e9',
+    additional: '#f1d0c0',
+  }}
+/>
+
+<ColorItem
+  title="Button Color"
+  subtitle="--buttonColor"
+  colors={{
+    primary: '#9ad0da',
+    secondary: '#afd8b5',
+  }}
+/>
+
+<ColorItem
+  title="Hover Color"
+  subtitle="--hoverColor"
+  colors={{
+    primary: '#7fa5b3',
+    secondary: '#90bcb6',
+    additional: '#c7a7db',
+  }}
+/>
+
+<ColorItem
+  title="Highlight Color"
+  subtitle="--highlightColor"
+  colors={{
+    primary: '#d0f1f4',
+    secondary: '#a9e3d9',
+    attention: '#f8c9d0',
+    additional: '#b0d9b5',
+    highlight: '#f9e0a1',
   }}
 />
