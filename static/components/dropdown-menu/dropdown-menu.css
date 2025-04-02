@@ -28,10 +28,9 @@ label {
   transform: translateY(-50%);
   right: 2px;
   pointer-events: none;
-  content: '˅';
+  content: '▽';
   color: #626161;
   transition: color 0.2s ease;
-  font-size: 14px;
 }
 
 .selected {
