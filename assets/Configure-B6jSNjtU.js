@@ -1,4 +1,4 @@
-import{j as n,M as t}from"./index-D4YGE1LG.js";import{useMDXComponents as r}from"./index-Cqfou8tt.js";import"./iframe-DibTviWw.js";import"./index-9yPe82QC.js";import"./index-D3wkhdL9.js";import"./index-Brs1icLk.js";import"./index-ogSvIofg.js";function e(i){const s={h1:"h1",li:"li",p:"p",strong:"strong",ul:"ul",...r(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(t,{title:"Intro"}),`
+import{j as n,M as t}from"./index-CRFZQPm3.js";import{useMDXComponents as r}from"./index-Cqfou8tt.js";import"./iframe-2AkVj6K0.js";import"./index-9yPe82QC.js";import"./index-D3wkhdL9.js";import"./index-Brs1icLk.js";import"./index-ogSvIofg.js";function e(i){const s={h1:"h1",li:"li",p:"p",strong:"strong",ul:"ul",...r(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(t,{title:"Intro"}),`
 `,n.jsx(s.h1,{id:"introduction",children:"Introduction"}),`
 `,n.jsx(s.p,{children:"Hi!"}),`
 `,n.jsxs(s.p,{children:["Welcome to my mini Storybook with React components and other features that I developed during my ",n.jsx(s.strong,{children:"TypeScript + design systems"})," study. Hope it highlights my progress and knowledge! 🙂"]}),`
