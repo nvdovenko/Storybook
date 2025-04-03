@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "deploy": "gh-pages -d storybook-static",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,md}'"
   },
@@ -29,6 +30,7 @@
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react": "^7.37.4",
+    "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
     "prop-types": "^15.8.1",
