@@ -8,6 +8,7 @@
   display: inline-block;
   cursor: pointer;
   border: 0;
+  color: black;
   font-weight: 400;
   font-family: 'Nunito Sans', sans-serif;
   transition:
@@ -22,7 +23,6 @@
 .toggle-button--off {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
   background-color: transparent;
-  cursor: default;
 }
 
 .toggle-button--small {

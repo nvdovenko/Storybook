@@ -4,6 +4,7 @@
   border: 0;
   font-weight: 400;
   font-family: 'Nunito Sans', sans-serif;
+  color: black;
 }
 .storybook-button--primary {
   background-color: #9ad0da;
